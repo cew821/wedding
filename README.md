@@ -1,4 +1,4 @@
 wedding
 =======
 
-My wedding webset
+The website for our wedding.
