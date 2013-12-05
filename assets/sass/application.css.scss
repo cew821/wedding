@@ -1,0 +1,45 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "bitters/bitters";
+
+body {
+	background: url("../images/winter.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#bottom-left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	@include linear-gradient(rgba(255,255,255,.00), rgba(29,25,28,0.95));
+	width: 100%;
+}
+
+.headline, .subheadline, .details {
+	color: white;
+}
+
+.subheadline {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1.25em;
+}
+
+.headline {
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 1em;
+}
+
+.details {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.25em;
+	margin-top: 20px;
+}
+
