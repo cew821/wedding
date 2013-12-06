@@ -266,10 +266,10 @@ body {
   bottom: 0;
   left: 0;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(29, 25, 28, 0.95)));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(29, 25, 28, 0.95));
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(29, 25, 28, 0.95));
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(29, 25, 28, 0.95)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(29, 25, 28, 0.95));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(29, 25, 28, 0.95));
   width: 100%; }
 
 .headline, .subheadline, .details {

@@ -16,7 +16,7 @@ body {
 	bottom: 0;
 	left: 0;
 	padding: 20px;
-	@include linear-gradient(rgba(255,255,255,.00), rgba(29,25,28,0.95));
+	@include linear-gradient(rgba(0,0,0,.00), rgba(29,25,28,0.95));
 	width: 100%;
 }
 
