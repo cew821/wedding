@@ -255,22 +255,52 @@ dl {
       color: black; }
 
 body {
-  background: url("../images/winter.jpg") no-repeat center center fixed;
+  background: url("../images/engaged_web.jpg") no-repeat right center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  body:before, body:after {
+    content: " ";
+    display: table; }
+  body:after {
+    clear: both; }
+  body a {
+    color: inherit;
+    text-decoration: underline; }
+  body a:hover {
+    color: #c0271e; }
 
-#bottom-left {
+#bottom-vignette {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(16, 3, 3, 0.95)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(16, 3, 3, 0.95));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(16, 3, 3, 0.95));
+  width: 100%;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; }
+
+#bottom-left {
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(29, 25, 28, 0.95)));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(29, 25, 28, 0.95));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(29, 25, 28, 0.95));
-  width: 100%; }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  #bottom-left:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    #bottom-left {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      #bottom-left:last-child {
+        margin-right: 0; } }
 
 .headline, .subheadline, .details {
   color: white; }
@@ -278,15 +308,27 @@ body {
 .subheadline {
   font-size: 30px;
   font-weight: 300;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  text-shadow: 1px 1px #000; }
 
 .headline {
   font-size: 60px;
   font-weight: 900;
-  line-height: 1em; }
+  line-height: 1em;
+  text-shadow: 1px 1px #000; }
 
 .details {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.25em;
-  margin-top: 20px; }
+  margin-top: 10px; }
+
+@media screen and (max-width: 640px) {
+  .subheadline {
+    font-size: 30px; }
+
+  .headline {
+    font-size: 40px; }
+
+  .details {
+    font-size: 16px; } }
