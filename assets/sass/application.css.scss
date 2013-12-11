@@ -24,7 +24,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   @include span-columns(12);
-  height: 600px;
+  height: 500px;
   color: white;
 }
 
@@ -37,13 +37,13 @@ body {
 #map {
 	@include span-columns(12);
 	background: blue;
-	height: 1600px;
+	// height: 1600px;
 	background: url("../images/usa_map.svg"); 
-	background-position: -800px 0px;
+	background-position: 0 0%;
 	background-repeat: no-repeat;
 	// background-origin: content-box;
-	background-attachment: fixed;
-	background-size: 2000px;
+	// background-attachment: fixed;
+	background-size: 100%;
   // -webkit-background-size: cover;
   // -moz-background-size: cover;
   // -o-background-size: cover;
@@ -51,21 +51,31 @@ body {
 }
 
 .picture {
-	margin-top: 100px;
-	border: 2px solid black;
-	height: 180px;
+	margin-top: 200px;
+	@include span-columns(2 of 12);
+
+	article {
+		border: 2px solid black;
+		height: 180px;
+		background: rgba(255,255,255,0.9);
+	}
+	.caption {
+		color: black;
+		background: yellow;
+	}
 }
 
 .picture-left {
-	background: green;
-	@include span-columns(2 of 12);
 	@include shift(4 of 12);
+	.caption {
+		text-align: right;
+	}
 }
 
 .picture-right {
-	background: red;
-	@include span-columns(2 of 12);
-	// @include shift(4 of 12);
+	.caption {
+		text-align: left;
+	}
 }
 
 #bottom-vignette {
