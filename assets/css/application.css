@@ -271,7 +271,7 @@ body {
     color: #c0271e; }
 
 #top {
-  background: url("../images/engaged_web.jpg") no-repeat right center fixed;
+  background: url("../images/engaged_web.jpg") no-repeat right center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -301,8 +301,37 @@ body {
   margin-right: 2.35765%;
   width: 100%;
   background: blue;
-  height: 1200px; }
+  height: 1600px;
+  background: url("../images/usa_map.svg");
+  background-position: -800px 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 2000px; }
   #map:last-child {
+    margin-right: 0; }
+
+.picture {
+  margin-top: 100px;
+  border: 2px solid black;
+  height: 180px; }
+
+.picture-left {
+  background: green;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 34.11922%; }
+  .picture-left:last-child {
+    margin-right: 0; }
+
+.picture-right {
+  background: red;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .picture-right:last-child {
     margin-right: 0; }
 
 #bottom-vignette {

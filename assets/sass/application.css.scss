@@ -18,7 +18,7 @@ body {
 }
 
 #top {
-	background: url("../images/engaged_web.jpg") no-repeat right center fixed;
+	background: url("../images/engaged_web.jpg") no-repeat right center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,9 +37,36 @@ body {
 #map {
 	@include span-columns(12);
 	background: blue;
-	height: 1200px;
+	height: 1600px;
+	background: url("../images/usa_map.svg"); 
+	background-position: -800px 0px;
+	background-repeat: no-repeat;
+	// background-origin: content-box;
+	background-attachment: fixed;
+	background-size: 2000px;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 }
 
+.picture {
+	margin-top: 100px;
+	border: 2px solid black;
+	height: 180px;
+}
+
+.picture-left {
+	background: green;
+	@include span-columns(2 of 12);
+	@include shift(4 of 12);
+}
+
+.picture-right {
+	background: red;
+	@include span-columns(2 of 12);
+	// @include shift(4 of 12);
+}
 
 #bottom-vignette {
 	@include linear-gradient(rgba(0,0,0,.00), $dark-red);
