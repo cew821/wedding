@@ -258,7 +258,9 @@ body {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: #48635c;
+  font-family: "Raleway", sans-serif; }
   body:before, body:after {
     content: " ";
     display: table; }
@@ -270,8 +272,11 @@ body {
   body a:hover {
     color: #c0271e; }
 
+.script {
+  font-family: "Dancing Script", cursive; }
+
 #top {
-  background: url("../images/engaged_web.jpg") no-repeat right center scroll;
+  background: #48635c url("../images/sunset.png") no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -280,33 +285,125 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  height: 500px;
-  color: white; }
+  height: 800px;
+  position: relative; }
   #top:last-child {
     margin-right: 0; }
+  #top .footline {
+    font-family: "Vast Shadow", cursive;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 40px;
+    width: 100%;
+    font-size: 30px;
+    color: #f6f3ea; }
+    @media screen and (max-width: 640px) {
+      #top .footline {
+        font-size: 20px; } }
+  #top .headline {
+    color: #48635c;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1em; }
+    @media screen and (max-width: 640px) {
+      #top .headline {
+        font-size: 50px; } }
+  #top .welcome {
+    font-size: 30px;
+    line-height: 10px; }
 
 #block_bar {
-  background: red;
-  color: white;
+  background: #1C1D20;
+  color: #f6f3ea;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   #block_bar:last-child {
     margin-right: 0; }
+
+#intro-headline {
+  position: relative;
+  top: 40px;
+  z-index: 1; }
 
 #map {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background: blue;
-  background: url("../images/usa_map.svg");
-  background-position: 0 0%;
-  background-repeat: no-repeat;
-  background-size: 100%; }
+  background: url("../images/usa_map.svg") no-repeat top center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: 115% 30%;
+  background-origin: content-box;
+  background-attachment: fixed;
+  background-size: 150% 150%; }
   #map:last-child {
     margin-right: 0; }
+
+#engagement {
+  background: url("../images/engagement.jpg");
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-position: 0 0%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-attachment: fixed;
+  background-size: cover; }
+  #engagement:last-child {
+    margin-right: 0; }
+
+#wedding {
+  background: url("../images/wedding.png");
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-attachment: fixed;
+  background-size: cover; }
+  #wedding:last-child {
+    margin-right: 0; }
+
+.story-box {
+  margin-top: 60px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  padding: 20px;
+  background: rgba(26, 26, 26, 0.5);
+  color: white; }
+  .story-box:last-child {
+    margin-right: 0; }
+  .story-box h3 {
+    margin-bottom: 20px; }
+  .story-box .title {
+    display: inline-block;
+    width: 20%;
+    font-weight: 700;
+    vertical-align: top; }
+  .story-box .information {
+    display: inline-block;
+    width: 75%;
+    margin-bottom: 20px; }
+
+.story-box-left {
+  border-radius: 0 15px 15px 0; }
+
+.story-box-right {
+  margin-left: 34.11922%;
+  border-radius: 15px 0 0 15px; }
 
 .picture {
   margin-top: 200px;
@@ -364,15 +461,15 @@ body {
 
 .subheadline {
   font-size: 30px;
-  font-weight: 300;
   line-height: 1.25em;
-  text-shadow: 1px 1px #000; }
+  font-family: 'Vast Shadow', cursive; }
 
 .headline {
+  font-family: 'Vast Shadow', cursive;
+  padding: 20px;
   font-size: 60px;
-  font-weight: 900;
-  line-height: 1em;
-  text-shadow: 1px 1px #000; }
+  font-weight: 400;
+  line-height: 1em; }
 
 .details {
   font-size: 18px;
