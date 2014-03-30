@@ -318,7 +318,7 @@ body {
     line-height: 10px; }
 
 #block_bar {
-  background: #1C1D20;
+  background: #1c1d20;
   color: #f6f3ea;
   float: left;
   display: block;
@@ -333,17 +333,20 @@ body {
   margin: 0px; }
 
 #map {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   background: url("../images/usa_map.svg") no-repeat top center;
   background-position: 115% 30%;
   background-origin: content-box;
   background-attachment: fixed;
   background-size: 150%; }
-  #map:last-child {
-    margin-right: 0; }
+  #map:before, #map:after {
+    content: " ";
+    display: table; }
+  #map:after {
+    clear: both; }
 
 #engagement {
   float: left;
@@ -456,28 +459,93 @@ body {
   border-radius: 15px 0 0 15px; }
 
 .picture {
-  margin-top: 200px;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 14.70196%; }
   .picture:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    .picture {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-bottom: 60px; }
+      .picture:last-child {
+        margin-right: 0; } }
   .picture article {
-    border: 2px solid black;
+    border: 1px solid #444;
     height: 180px;
-    background: rgba(255, 255, 255, 0.9); }
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    @media screen and (max-width: 640px) {
+      .picture article {
+        height: 240px; } }
   .picture .caption {
-    color: black;
-    background: yellow; }
+    color: #f6f3ea;
+    text-align: center;
+    background: #1c1d20;
+    padding: 10px;
+    border-radius: 0 0 15px 15px; }
 
-.picture-left {
-  margin-left: 34.11922%; }
-  .picture-left .caption {
-    text-align: right; }
+#map-picture-1 {
+  margin-left: 76.76824%; }
+  #map-picture-1 article {
+    margin-top: 100px;
+    background-image: url("../images/charles_baby.jpg"); }
+  @media screen and (max-width: 640px) {
+    #map-picture-1 {
+      margin-left: 25.58941%; } }
 
-.picture-right .caption {
-  text-align: left; }
+#map-picture-2 {
+  margin-left: 25.58941%; }
+  #map-picture-2 article {
+    background-image: url("../images/engaged_web.jpg"); }
+  @media screen and (max-width: 640px) {
+    #map-picture-2 {
+      margin-left: 25.58941%; } }
+
+#map-picture-3 {
+  margin-left: 68.23843%; }
+  #map-picture-3 article {
+    background-image: url("../images/engaged_web.jpg"); }
+  @media screen and (max-width: 640px) {
+    #map-picture-3 {
+      margin-left: 25.58941%; } }
+
+#map-picture-4 {
+  margin-left: 25.58941%; }
+  #map-picture-4 article {
+    background-image: url("../images/engaged_web.jpg"); }
+  @media screen and (max-width: 640px) {
+    #map-picture-4 {
+      margin-left: 25.58941%; } }
+
+#map-picture-5 {
+  margin-left: 85.29804%; }
+  #map-picture-5 article {
+    background-image: url("../images/engaged_web.jpg"); }
+  @media screen and (max-width: 640px) {
+    #map-picture-5 {
+      margin-left: 25.58941%; } }
+
+#map-picture-6 {
+  margin-left: 76.76824%; }
+  #map-picture-6 article {
+    margin-top: 100px;
+    background-image: url("../images/engaged_web.jpg"); }
+  @media screen and (max-width: 640px) {
+    #map-picture-6 {
+      margin-left: 25.58941%; } }
+
+#map-picture-7 article {
+  background-image: url("../images/engaged_web.jpg"); }
+@media screen and (max-width: 640px) {
+  #map-picture-7 {
+    margin-left: 25.58941%; } }
 
 #bottom-vignette {
   background-color: rgba(0, 0, 0, 0);
