@@ -259,7 +259,7 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background: #48635c;
+  background: RGB(72, 99, 92);
   font-family: "Raleway", sans-serif; }
   body:before, body:after {
     content: " ";
@@ -276,7 +276,7 @@ body {
   font-family: "Dancing Script", cursive; }
 
 #top {
-  background: #48635c url("../images/sunset.png") no-repeat center center scroll;
+  background: RGB(72, 99, 92) url("../images/sunset.png") no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -285,10 +285,13 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  height: 800px;
+  height: 600px;
   position: relative; }
   #top:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    #top {
+      height: 350px; } }
   #top .footline {
     font-family: "Vast Shadow", cursive;
     text-align: center;
@@ -296,13 +299,13 @@ body {
     bottom: 0;
     padding-bottom: 40px;
     width: 100%;
-    font-size: 30px;
+    font-size: 40px;
     color: #f6f3ea; }
     @media screen and (max-width: 640px) {
       #top .footline {
         font-size: 20px; } }
   #top .headline {
-    color: #48635c;
+    color: RGB(72, 99, 92);
     width: 100%;
     text-align: center;
     font-size: 80px;
@@ -321,14 +324,13 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  margin-bottom: 20px; }
   #block_bar:last-child {
     margin-right: 0; }
 
 #intro-headline {
-  position: relative;
-  top: 40px;
-  z-index: 1; }
+  text-align: center; }
 
 #map {
   float: left;
@@ -336,14 +338,10 @@ body {
   margin-right: 2.35765%;
   width: 100%;
   background: url("../images/usa_map.svg") no-repeat top center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
   background-position: 115% 30%;
   background-origin: content-box;
   background-attachment: fixed;
-  background-size: 150% 150%; }
+  background-size: 150%; }
   #map:last-child {
     margin-right: 0; }
 
