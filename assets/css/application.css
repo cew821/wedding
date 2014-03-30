@@ -259,7 +259,7 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background: RGB(72, 99, 92);
+  background: HSL(164, 16%, 34%);
   font-family: "Raleway", sans-serif; }
   body:before, body:after {
     content: " ";
@@ -276,7 +276,7 @@ body {
   font-family: "Dancing Script", cursive; }
 
 #top {
-  background: RGB(72, 99, 92) url("../images/sunset.png") no-repeat center center scroll;
+  background: HSL(164, 16%, 34%) url("../images/sunset.png") no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -305,7 +305,7 @@ body {
       #top .footline {
         font-size: 20px; } }
   #top .headline {
-    color: RGB(72, 99, 92);
+    color: HSL(164, 16%, 34%);
     width: 100%;
     text-align: center;
     font-size: 80px;
@@ -329,9 +329,6 @@ body {
   #block_bar:last-child {
     margin-right: 0; }
 
-#intro-headline {
-  text-align: center; }
-
 #map {
   float: left;
   display: block;
@@ -346,18 +343,35 @@ body {
     margin-right: 0; }
 
 #engagement {
-  background: url("../images/engagement.jpg");
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-position: 0 0%;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-attachment: fixed;
-  background-size: cover; }
+  position: relative; }
   #engagement:last-child {
     margin-right: 0; }
+  #engagement #engagement-1, #engagement #engagement-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  #engagement #engagement-1 {
+    background-image: url("../images/zoomoutrock.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -9; }
+  #engagement #engagement-2 {
+    background-image: url("../images/sunset.png");
+    background-position: 0 0%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -10; }
 
 #wedding {
   background: url("../images/wedding.png");
@@ -398,6 +412,16 @@ body {
 
 .story-box-left {
   border-radius: 0 15px 15px 0; }
+
+.story-box-spacer {
+  background: none;
+  height: 200px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .story-box-spacer:last-child {
+    margin-right: 0; }
 
 .story-box-right {
   margin-left: 34.11922%;
@@ -464,6 +488,7 @@ body {
 
 .headline {
   font-family: 'Vast Shadow', cursive;
+  text-align: center;
   padding: 20px;
   font-size: 60px;
   font-weight: 400;
