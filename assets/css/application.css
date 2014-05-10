@@ -281,9 +281,6 @@ body {
   position: relative; }
   #top:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 640px) {
-    #top {
-      height: 400px; } }
   #top .footline {
     font-family: "Libre Baskerville", serif;
     text-align: center;
@@ -304,10 +301,15 @@ body {
     line-height: 1em; }
     @media screen and (max-width: 640px) {
       #top .headline {
-        font-size: 50px; } }
+        font-size: 50px;
+        margin-top: 20px; } }
   #top .welcome {
     font-size: 30px;
     line-height: 10px; }
+
+.white-lights {
+  background: url("../images/lights_white_strand.svg") no-repeat top center;
+  height: 200px; }
 
 #block_bar {
   background: HSLA(223, 37%, 17%, 1);
@@ -332,7 +334,13 @@ body {
         margin: 10px; } }
 
 #intro-headline {
-  margin: 0px; }
+  margin: 0px;
+  position: relative; }
+
+#our-story {
+  background: HSLA(223, 37%, 17%, 1);
+  margin-top: 0;
+  padding-top: 100px; }
 
 #map {
   background: url("../images/usa_map.svg") no-repeat top center;
@@ -346,14 +354,6 @@ body {
   width: 100%; }
   #map:last-child {
     margin-right: 0; }
-  #map #heart {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    background: red; }
-    #map #heart:last-child {
-      margin-right: 0; }
 
 #engagement {
   float: left;
@@ -469,7 +469,7 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%; }
+  width: 23.23176%; }
   .picture:last-child {
     margin-right: 0; }
   @media screen and (max-width: 640px) {
@@ -481,9 +481,13 @@ body {
       margin-bottom: 60px; }
       .picture:last-child {
         margin-right: 0; } }
+  .picture .script {
+    font-size: 44px;
+    line-height: 54px;
+    margin-top: 40px; }
   .picture article {
     border: 1px solid #444;
-    height: 180px;
+    height: 240px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -499,60 +503,86 @@ body {
     border-radius: 0 0 15px 15px; }
 
 #map-picture-1 {
-  margin-left: 76.76824%; }
+  margin-left: 68.23843%; }
   #map-picture-1 article {
     margin-top: 100px;
-    background-image: url("../images/charles_baby.jpg"); }
+    background-image: url("../images/jess_baby.jpg"); }
   @media screen and (max-width: 640px) {
     #map-picture-1 {
       margin-left: 25.58941%; } }
 
 #map-picture-2 {
-  margin-left: 25.58941%; }
+  margin-left: 17.05961%; }
   #map-picture-2 article {
-    background-image: url("../images/engaged_web.jpg"); }
+    background-image: url("../images/charles_baby.jpg"); }
   @media screen and (max-width: 640px) {
     #map-picture-2 {
       margin-left: 25.58941%; } }
 
 #map-picture-3 {
-  margin-left: 68.23843%; }
+  margin-left: 59.70863%; }
   #map-picture-3 article {
-    background-image: url("../images/engaged_web.jpg"); }
+    background-image: url("../images/jess_college.jpg"); }
   @media screen and (max-width: 640px) {
     #map-picture-3 {
       margin-left: 25.58941%; } }
 
 #map-picture-4 {
-  margin-left: 25.58941%; }
+  margin-left: 17.05961%; }
   #map-picture-4 article {
-    background-image: url("../images/engaged_web.jpg"); }
+    background-image: url("../images/charles_graduation.jpg"); }
   @media screen and (max-width: 640px) {
     #map-picture-4 {
       margin-left: 25.58941%; } }
 
 #map-picture-5 {
-  margin-left: 85.29804%; }
+  margin-left: 59.70863%; }
   #map-picture-5 article {
-    background-image: url("../images/engaged_web.jpg"); }
+    background-image: url("../images/jess_africa1.jpg"); }
   @media screen and (max-width: 640px) {
     #map-picture-5 {
       margin-left: 25.58941%; } }
 
 #map-picture-6 {
-  margin-left: 76.76824%; }
+  margin-left: 34.11922%; }
   #map-picture-6 article {
     margin-top: 100px;
-    background-image: url("../images/engaged_web.jpg"); }
+    background-image: url("../images/charles_work.jpg"); }
   @media screen and (max-width: 640px) {
     #map-picture-6 {
       margin-left: 25.58941%; } }
 
-#map-picture-7 article {
-  background-image: url("../images/engaged_web.jpg"); }
-@media screen and (max-width: 640px) {
-  #map-picture-7 {
-    margin-left: 25.58941%; } }
+#map-picture-7 {
+  margin-left: 8.5298%; }
+  #map-picture-7 article {
+    margin-top: 100px;
+    background-image: url("../images/jess_law.jpg"); }
+  @media screen and (max-width: 640px) {
+    #map-picture-7 {
+      margin-left: 25.58941%; } }
+
+#map-picture-8 {
+  margin-left: 25.58941%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-bottom: 200px; }
+  #map-picture-8 article {
+    margin-top: 100px;
+    background-image: url("../images/sunset.jpg");
+    height: 400px; }
+  #map-picture-8:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    #map-picture-8 {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      #map-picture-8:last-child {
+        margin-right: 0; } }
 
 #bottom-vignette {
   background-color: rgba(0, 0, 0, 0);
@@ -593,7 +623,7 @@ body {
   font-family: 'Vast Shadow', cursive;
   text-align: center;
   padding: 20px;
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 60px;
   font-size: 60px;
   font-weight: 400;

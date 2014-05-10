@@ -4,6 +4,8 @@ function resize_top() {
   console.log(height);
   console.log(block_bar_height);
   $('#top').css({'height': (height - block_bar_height)+'px'});
+  $('#heart-container').css({'height': (height - block_bar_height)+'px'});
+  $('#our-story').css({'height': ((height - block_bar_height)*1.5)+'px'});
   var s = skrollr.init();
 }
 
