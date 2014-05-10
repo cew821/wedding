@@ -4,27 +4,30 @@
 
 $mobile: new-breakpoint(max-width 640px 4);
 $bright-red: rgba(192, 39, 30, 1);
+$bright-yellow: HSLA(43, 92%, 56%, 1);
 $dark-red: rgba(16,3,3,0.95);
 $off-white: #F6F3EA;
-$blue: HSL(164, 16%, 34%);
-$super_headline: 'Vast Shadow', cursive;
-$body_font: 'Raleway', sans-serif;
-$headline_font: 'Bitter', serif;
+$blue: HSLA(223, 37%, 17%, 1);
+// $super_headline: 'Vast Shadow', cursive;
+$super_headline: 'Libre Baskerville', serif;
+$body_font: 'Libre Baskerville', serif;
+// $headline_font: 'Bitter', serif;
+$headline_font: 'Libre Baskerville', serif;
 $script_font: 'Dancing Script', cursive;
-$dark-background: #1C1D20;
-
+$dark-background: HSLA(223, 37%, 17%, 1);
 
 body {
-  @include outer-container;
+  // @include outer-container;
   a {
   	color: inherit;
   	text-decoration: underline;
   }
   a:hover {
-  	color: $bright-red;
+  	color: $bright-yellow;
   }
   background: $blue;
-
+  padding: 0;
+  margin: 0;
   font-family: $body_font;
 }
 
@@ -40,7 +43,7 @@ body {
   background-size: cover;
 
   @include span-columns(12);
-  height: 600px;
+  // // height: 500px;
   position: relative;
 
   @include media($mobile) {
@@ -84,7 +87,23 @@ body {
 	color: $off-white;
 	@include span-columns(12);
 	z-index: 100;
-  margin-bottom: 20px;
+  font-size: 24px;
+
+  ul {
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin: 20px 30px;
+  }
+
+  @include media($mobile) {
+    font-size: 16px;
+    li {
+      margin: 10px;
+    }
+  }
 }
 
 #intro-headline {
@@ -92,12 +111,21 @@ body {
 }
 
 #map {
-	@include outer-container;
+	// @include outer-container;
 	background: url("../images/usa_map.svg") no-repeat top center; 
 	background-position: 115% 30%;
 	background-origin: content-box;
 	background-attachment: fixed;
 	background-size: 150%;
+  @include span-columns(12);
+  // background: red;
+
+  #heart {
+    @include span-columns(12);
+    background: red;
+    // width: 100px;
+    // height: 100px;
+  }
 }
 
 
