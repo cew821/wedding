@@ -33,6 +33,8 @@ body {
 
 .script {
 	font-family: $script_font;
+  font-size: 44px;
+  line-height: 54px;
 }
 
 #top {
@@ -115,22 +117,198 @@ body {
   position: relative;
 }
 
-#our-story {
-  background: $blue;
-  margin-top: 0;
-  padding-top: 100px;
-}
 
 #map {
-	// @include outer-container;
 	background: url("../images/usa_map.svg") no-repeat top center; 
 	background-position: 115% 30%;
 	background-origin: content-box;
 	background-attachment: fixed;
 	background-size: 150%;
   @include span-columns(12);
-  // background: red;
+
+  .inter-caption {
+    // background: $blue;
+    color: $off-white;
+    margin-top: 600px;
+    margin-bottom: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    @include span-columns(4);
+    @include shift(8);
+
+    @include media($mobile) {
+      @include span-columns(10 of 12);
+      @include shift(1);
+      margin-bottom: 60px;
+      margin-top: 60px;
+      font-size: 26px;
+      line-height: 32px;
+      text-align: center;
+      background: $blue;
+    }
+  }
 }
+
+
+.picture {
+  @include span-columns(3);
+
+  @include media($mobile) {
+    @include span-columns(6 of 12);
+    @include shift(3 of 12);
+    margin-bottom: 60px;
+  }
+
+  .script {
+    font-size: 44px;
+    line-height: 54px;
+    margin-top: 40px;
+  }
+
+  article {
+    border: 1px solid #444;
+    height: 240px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @include media($mobile) {
+      height: 240px;
+    }
+  }
+
+  .caption {
+    color: $off-white;
+    text-align: center;
+    background: $dark-background;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+#map-picture-1{
+  article {
+    margin-top: 100px;
+    background-image: url('../images/jess_baby.jpg');
+  }
+  @include shift(8 of 12);
+  @include media($mobile) {
+    @include shift(3);
+  }
+
+}
+
+#map-picture-2{
+  article {
+    // margin-top: 100px;
+    background-image: url('../images/charles_baby.jpg');
+  }
+  @include shift(2 of 12);
+  @include media($mobile) {
+    @include shift(3);
+  }
+
+}
+
+#map-picture-3{
+  article {
+    background-image: url('../images/jess_college.jpg');
+  }
+  @include shift(7 of 12);
+  @include media($mobile) {
+    @include shift(3);
+  }
+
+}
+
+#map-picture-4{
+  article {
+    // margin-top: 100px;
+    background-image: url('../images/charles_graduation.jpg');
+  }
+  @include shift(2 of 12);
+  @include media($mobile) {
+    @include shift(3);
+  }
+}
+
+#map-picture-5{
+  article {
+    // margin-top: 100px;
+    background-image: url('../images/jess_africa1.jpg');
+  }
+  @include shift(7 of 12);
+  @include media($mobile) {
+    @include shift(3);
+  }
+}
+
+#map-picture-6{
+  article {
+    margin-top: 400px;
+    background-image: url('../images/charles_work.jpg');
+  }
+  @include shift(4 of 12);
+  @include media($mobile) {
+    @include shift(3);
+    article {
+      margin-top: 0px;
+    }
+  }
+}
+
+#map-picture-7{
+  article {
+    margin-top: 400px;
+    background-image: url('../images/jess_law.jpg');
+  }
+  @include shift(1 of 12);
+  @include media($mobile) {
+    @include shift(3);
+    article {
+      margin-top: 0px;
+    }
+  }
+}
+
+#our-story {
+  background: $blue;
+  margin-top: 0;
+  padding-top: 100px;
+}
+
+// #boston {
+//   background-image: url("../images/sunset.jpg");
+//   background-position: bottom center;
+//   background-repeat: no-repeat;
+//   background-origin: content-box;
+//   background-attachment: fixed;
+//   background-size: cover;
+//   z-index: -9;
+
+//   @include span-columns(12);
+//   position: relative;
+
+//   .story-box {
+//     @include shift(2);
+//     border-radius: 12px;
+//     margin-top: 300px;
+//     background: none;
+//     p {
+//       margin: 30px 0;
+//     }
+//     .script {
+//       margin: 300px 0 300px 0;
+//     }
+//     @include media($mobile) {
+//       margin-top: 40px;
+//       .script {
+//         margin: 40px 0 40px 0;
+//       }
+//     }
+//   }
+// }
 
 // #heart {
 
@@ -157,7 +335,7 @@ body {
   @include span-columns(12);
   position: relative;
 
-  #engagement-1, #engagement-2, #engagement-3 {
+  #engagement-1, #engagement-2, #engagement-3, #boston {
     position:absolute;
     top:0;
     bottom:0;
@@ -165,6 +343,39 @@ body {
     width:100%;
     // height:800px;
   }
+
+  #how-we-met {
+    margin-top: 500px;
+    background: none;
+    @include shift(1);
+    p {
+      margin: 60px 0;
+    }
+    .script {
+      margin: 400px 0 500px 0;
+    }
+
+    // @include media($mobile) {
+    //   margin-top: 40px;
+    //   .script {
+    //     margin: 40px 0 40px 0;
+    //   }
+    // }
+  }
+
+  .headline {
+    @include span-columns(12);
+  }
+
+  #boston {
+    background-image: url("../images/sunset.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -9;
+  } 
 
   #engagement-1 {
     background-image: url("../images/zoomoutrock.jpg");
@@ -205,6 +416,191 @@ body {
 	background-origin: content-box;
 	background-attachment: fixed;
 	background-size: cover;
+
+  // .headline {
+  //   margin-top: 100px;
+  // }
+  .story-box {
+    margin-bottom: 100px;
+  }
+
+  .headline {
+    @include span-columns(12);
+  }
+
+  .picture {
+    @include span-columns(2);
+    .script {
+      font-size: 28px;
+      line-height: 32px;
+      br {
+        margin: 10px 0;
+      }
+    }
+    .caption {
+      height: 180px;
+    }
+    margin-bottom: 40px;
+
+    @include media($mobile) {
+      @include span-columns(6 of 12);
+      .caption {
+        height: 120px
+      }
+    }
+  }
+
+  .first-picture {
+    @include shift(1);
+    @include media($mobile) {
+      @include shift(3);
+    }
+  }
+
+  #wedding-party-1 {
+    article {
+      background-image: url('../images/wedding_party/megan1.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-2 {
+    article {
+      background-image: url('../images/wedding_party/kim.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-3 {
+    article {
+      background-image: url('../images/wedding_party/libby.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-4 {
+    article {
+      background-image: url('../images/wedding_party/becca3.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-5 {
+    article {
+      background-image: url('../images/wedding_party/lauren.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-6 {
+    article {
+      background-image: url('../images/wedding_party/mary.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-7 {
+    article {
+      background-image: url('../images/wedding_party/lindsay.jpg');
+      background-position: bottom center;
+    }
+  }
+
+
+  #wedding-party-8 {
+    article {
+      background-image: url('../images/wedding_party/colby.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-9 {
+    article {
+      background-image: url('../images/wedding_party/rachel.jpg');
+      background-position: top center;
+    }
+  }
+
+
+  #wedding-party-10 {
+    article {
+      background-image: url('../images/wedding_party/melinda.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-11 {
+    article {
+      background-image: url('../images/wedding_party/chris.jpg');
+      background-position: top center;
+    }
+  }
+
+
+  #wedding-party-12 {
+    article {
+      background-image: url('../images/wedding_party/tim.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-13 {
+    article {
+      background-image: url('../images/wedding_party/jeff.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-14 {
+    article {
+      background-image: url('../images/wedding_party/charlie.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-15 {
+    article {
+      background-image: url('../images/wedding_party/brendan.jpg');
+      background-position: top center;
+    }
+  }
+
+
+  #wedding-party-16 {
+    article {
+      background-image: url('../images/wedding_party/joe.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-17 {
+    article {
+      background-image: url('../images/wedding_party/scott.jpg');
+      background-position: top center;
+    }
+  } 
+
+  #wedding-party-18 {
+    article {
+      background-image: url('../images/wedding_party/eric.jpg');
+      background-position: top center;
+    }
+  }
+
+  #wedding-party-19 {
+    article {
+      background-image: url('../images/wedding_party/ming.jpg');
+      background-position: top center;
+    }
+  }   
+
+
+  #wedding-party-20 {
+    article {
+      background-image: url('../images/wedding_party/steve.jpg');
+      background-position: top center;
+    }
+  }     
 }
 
 #she-said-yes {
@@ -214,16 +610,19 @@ body {
   font-size: 80px;
   text-shadow: 1px 1px #333;
   line-height: 1em;
-  margin-bottom: 400px;
+  margin-bottom: 600px;
 }
 
 .story-box {
 	margin-top: 60px;
 	// border-radius: 12px;
 	@include span-columns(8 of 12);
+  @include shift(2);
+  border-radius: 15px;
 	padding: 20px;
 	background: rgba(26, 26, 26, 0.7);
 	color: white;
+  text-shadow: 1px 1px #333;
   font-size: 20px;
   line-height: 1.5em;
 
@@ -240,181 +639,25 @@ body {
 		width: 20%;
 		font-weight: 700;
 		vertical-align: top;
+    margin: 30px 0;
 	}
 
 	.information {
 		display: inline-block;
-		width: 75%;
-		margin-bottom: 20px;
+		width: 70%;
+    margin-top: 30px;
+		margin-bottom: 30px;
+    // margin-left: 5%;
+    // margin-bottom: 40px;
 	}
-}
-
-.story-box-left {
-	border-radius: 0 15px 15px 0;
 }
 
 .story-box-spacer {
   background: none;
   height: 400px;
   @include span-columns(12 of 12);
-
-  @include media($mobile) {
-    height: 350px;
-  }
 }
 
-.story-box-right {
-	@include shift(4 of 12);
-	border-radius: 15px 0 0 15px;
-
-}
-
-.picture {
-  @include span-columns(3);
-
-  @include media($mobile) {
-    @include span-columns(6 of 12);
-    margin-bottom: 60px;
-  }
-
-  .script {
-    font-size: 44px;
-    line-height: 54px;
-    margin-top: 40px;
-  }
-
-	article {
-		border: 1px solid #444;
-		height: 240px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    @include media($mobile) {
-      height: 240px;
-    }
-	}
-
-	.caption {
-		color: $off-white;
-    text-align: center;
-		background: $dark-background;
-    padding: 10px;
-    border-radius: 0 0 15px 15px;
-	}
-}
-
-#map-picture-1{
-  article {
-    margin-top: 100px;
-    background-image: url('../images/jess_baby.jpg');
-  }
-  @include shift(8 of 12);
-  @include media($mobile) {
-    @include shift(3 of 12);
-  }
-}
-
-#map-picture-2{
-  article {
-    // margin-top: 100px;
-    background-image: url('../images/charles_baby.jpg');
-  }
-  @include shift(2 of 12);
-  @include media($mobile) {
-    @include shift(3 of 12);
-  }
-}
-
-#map-picture-3{
-  article {
-    background-image: url('../images/jess_college.jpg');
-  }
-  @include shift(7 of 12);
-  @include media($mobile) {
-    @include shift(3 of 12);
-  }
-}
-
-#map-picture-4{
-  article {
-    // margin-top: 100px;
-    background-image: url('../images/charles_graduation.jpg');
-  }
-  @include shift(2 of 12);
-  @include media($mobile) {
-    @include shift(3 of 12);
-  }
-}
-
-#map-picture-5{
-  article {
-    // margin-top: 100px;
-    background-image: url('../images/jess_africa1.jpg');
-  }
-  @include shift(7 of 12);
-  @include media($mobile) {
-    @include shift(3 of 12);
-  }
-}
-
-#map-picture-6{
-  article {
-    margin-top: 100px;
-    background-image: url('../images/charles_work.jpg');
-  }
-  @include shift(4 of 12);
-  @include media($mobile) {
-    @include shift(3 of 12);
-  }
-}
-
-#map-picture-7{
-  article {
-    margin-top: 100px;
-    background-image: url('../images/jess_law.jpg');
-  }
-  @include shift(1 of 12);
-  @include media($mobile) {
-    @include shift(3 of 12);
-  }
-}
-
-#map-picture-8{
-  article {
-    margin-top: 100px;
-    background-image: url('../images/sunset.jpg');
-    height: 400px;
-  }
-  @include shift(3 of 12);
-  @include span-columns(6);
-  margin-bottom: 200px;
-
-  @include media($mobile) {
-    @include shift(1 of 12);
-    @include span-columns(10 of 12);
-  }
-}
-
-
-#bottom-vignette {
-	@include linear-gradient(rgba(0,0,0,.00), $dark-red);
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-
-#bottom-left {
-	// background: blue;
-	padding: 20px;
-	@include span-columns(6);
-
-	@include media($mobile) {
-		@include span-columns(4);
-	}
-}
 
 .headline, .subheadline, .details {
 	color: white;
@@ -457,4 +700,44 @@ body {
 	.details {
 		font-size: 14px;
 	}
+}
+
+#footman {
+  @include span-columns(12);
+  position: relative;
+  // background: red;
+
+  p {
+    margin: 20px 0;
+  }
+
+  #jar {
+    margin-top: 250px;
+    @include span-columns(2);
+    @include shift(2);
+    height: 200px;
+    background: url("../images/jar.svg") no-repeat top center;
+    background-size: contain;
+    color: white;
+  }
+  
+  #details {
+    margin-top: 220px;
+    @include span-columns(5 of 12);
+    @include shift(2);
+    color: $off-white;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  @include media($mobile){
+    #jar {
+      margin-top: 100px;
+    }
+
+    #details {
+      margin-top: 100px;
+      font-size: 14px;
+    }
+  }
 }

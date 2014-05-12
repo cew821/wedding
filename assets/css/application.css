@@ -266,7 +266,9 @@ body {
     color: HSLA(43, 92%, 56%, 1); }
 
 .script {
-  font-family: "Dancing Script", cursive; }
+  font-family: "Dancing Script", cursive;
+  font-size: 44px;
+  line-height: 54px; }
 
 #top {
   background: HSLA(223, 37%, 17%, 1) url("../images/sunset.png") no-repeat center center scroll;
@@ -337,11 +339,6 @@ body {
   margin: 0px;
   position: relative; }
 
-#our-story {
-  background: HSLA(223, 37%, 17%, 1);
-  margin-top: 0;
-  padding-top: 100px; }
-
 #map {
   background: url("../images/usa_map.svg") no-repeat top center;
   background-position: 115% 30%;
@@ -354,116 +351,35 @@ body {
   width: 100%; }
   #map:last-child {
     margin-right: 0; }
-
-#engagement {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  position: relative; }
-  #engagement:last-child {
-    margin-right: 0; }
-  #engagement #engagement-1, #engagement #engagement-2, #engagement #engagement-3 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%; }
-  #engagement #engagement-1 {
-    background-image: url("../images/zoomoutrock.jpg");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -9; }
-  #engagement #engagement-2 {
-    background-image: url("../images/engagement.jpg");
-    background-position: 0 0%;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -10; }
-  #engagement #engagement-3 {
-    background-image: url("../images/engaged_web.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -11; }
-
-#wedding {
-  background: url("../images/wedding.png");
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  background-position: 0% 70%;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-attachment: fixed;
-  background-size: cover; }
-  #wedding:last-child {
-    margin-right: 0; }
-
-#she-said-yes {
-  color: #f6f3ea;
-  font-family: "Dancing Script", cursive;
-  background: none;
-  font-size: 80px;
-  text-shadow: 1px 1px #333;
-  line-height: 1em;
-  margin-bottom: 400px; }
-
-.story-box {
-  margin-top: 60px;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  padding: 20px;
-  background: rgba(26, 26, 26, 0.7);
-  color: white;
-  font-size: 20px;
-  line-height: 1.5em; }
-  .story-box:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 640px) {
-    .story-box {
-      font-size: 14px; } }
-  .story-box h3 {
-    margin-bottom: 20px; }
-  .story-box .title {
-    display: inline-block;
-    width: 20%;
-    font-weight: 700;
-    vertical-align: top; }
-  .story-box .information {
-    display: inline-block;
-    width: 75%;
-    margin-bottom: 20px; }
-
-.story-box-left {
-  border-radius: 0 15px 15px 0; }
-
-.story-box-spacer {
-  background: none;
-  height: 400px;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .story-box-spacer:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 640px) {
-    .story-box-spacer {
-      height: 350px; } }
-
-.story-box-right {
-  margin-left: 34.11922%;
-  border-radius: 15px 0 0 15px; }
+  #map .inter-caption {
+    color: #f6f3ea;
+    margin-top: 600px;
+    margin-bottom: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 68.23843%; }
+    #map .inter-caption:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 640px) {
+      #map .inter-caption {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        background: HSLA(223, 37%, 17%, 1); }
+        #map .inter-caption:last-child {
+          margin-right: 0; } }
 
 .picture {
   float: left;
@@ -478,6 +394,7 @@ body {
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
+      margin-left: 25.58941%;
       margin-bottom: 60px; }
       .picture:last-child {
         margin-right: 0; } }
@@ -546,70 +463,256 @@ body {
 #map-picture-6 {
   margin-left: 34.11922%; }
   #map-picture-6 article {
-    margin-top: 100px;
+    margin-top: 400px;
     background-image: url("../images/charles_work.jpg"); }
   @media screen and (max-width: 640px) {
     #map-picture-6 {
-      margin-left: 25.58941%; } }
+      margin-left: 25.58941%; }
+      #map-picture-6 article {
+        margin-top: 0px; } }
 
 #map-picture-7 {
   margin-left: 8.5298%; }
   #map-picture-7 article {
-    margin-top: 100px;
+    margin-top: 400px;
     background-image: url("../images/jess_law.jpg"); }
   @media screen and (max-width: 640px) {
     #map-picture-7 {
-      margin-left: 25.58941%; } }
+      margin-left: 25.58941%; }
+      #map-picture-7 article {
+        margin-top: 0px; } }
 
-#map-picture-8 {
-  margin-left: 25.58941%;
+#our-story {
+  background: HSLA(223, 37%, 17%, 1);
+  margin-top: 0;
+  padding-top: 100px; }
+
+#engagement {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-bottom: 200px; }
-  #map-picture-8 article {
-    margin-top: 100px;
-    background-image: url("../images/sunset.jpg");
-    height: 400px; }
-  #map-picture-8:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 640px) {
-    #map-picture-8 {
-      margin-left: 8.5298%;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%; }
-      #map-picture-8:last-child {
-        margin-right: 0; } }
-
-#bottom-vignette {
-  background-color: rgba(0, 0, 0, 0);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(16, 3, 3, 0.95)));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(16, 3, 3, 0.95));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(16, 3, 3, 0.95));
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
+  position: relative; }
+  #engagement:last-child {
+    margin-right: 0; }
+  #engagement #engagement-1, #engagement #engagement-2, #engagement #engagement-3, #engagement #boston {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  #engagement #how-we-met {
+    margin-top: 500px;
+    background: none;
+    margin-left: 8.5298%; }
+    #engagement #how-we-met p {
+      margin: 60px 0; }
+    #engagement #how-we-met .script {
+      margin: 400px 0 500px 0; }
+  #engagement .headline {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #engagement .headline:last-child {
+      margin-right: 0; }
+  #engagement #boston {
+    background-image: url("../images/sunset.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -9; }
+  #engagement #engagement-1 {
+    background-image: url("../images/zoomoutrock.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -9; }
+  #engagement #engagement-2 {
+    background-image: url("../images/engagement.jpg");
+    background-position: 0 0%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -10; }
+  #engagement #engagement-3 {
+    background-image: url("../images/engaged_web.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -11; }
 
-#bottom-left {
-  padding: 20px;
+#wedding {
+  background: url("../images/wedding.png");
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
-  #bottom-left:last-child {
+  width: 100%;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-attachment: fixed;
+  background-size: cover; }
+  #wedding:last-child {
+    margin-right: 0; }
+  #wedding .story-box {
+    margin-bottom: 100px; }
+  #wedding .headline {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #wedding .headline:last-child {
+      margin-right: 0; }
+  #wedding .picture {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-bottom: 40px; }
+    #wedding .picture:last-child {
+      margin-right: 0; }
+    #wedding .picture .script {
+      font-size: 28px;
+      line-height: 32px; }
+      #wedding .picture .script br {
+        margin: 10px 0; }
+    #wedding .picture .caption {
+      height: 180px; }
+    @media screen and (max-width: 640px) {
+      #wedding .picture {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        #wedding .picture:last-child {
+          margin-right: 0; }
+        #wedding .picture .caption {
+          height: 120px; } }
+  #wedding .first-picture {
+    margin-left: 8.5298%; }
+    @media screen and (max-width: 640px) {
+      #wedding .first-picture {
+        margin-left: 25.58941%; } }
+  #wedding #wedding-party-1 article {
+    background-image: url("../images/wedding_party/megan1.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-2 article {
+    background-image: url("../images/wedding_party/kim.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-3 article {
+    background-image: url("../images/wedding_party/libby.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-4 article {
+    background-image: url("../images/wedding_party/becca3.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-5 article {
+    background-image: url("../images/wedding_party/lauren.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-6 article {
+    background-image: url("../images/wedding_party/mary.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-7 article {
+    background-image: url("../images/wedding_party/lindsay.jpg");
+    background-position: bottom center; }
+  #wedding #wedding-party-8 article {
+    background-image: url("../images/wedding_party/colby.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-9 article {
+    background-image: url("../images/wedding_party/rachel.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-10 article {
+    background-image: url("../images/wedding_party/melinda.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-11 article {
+    background-image: url("../images/wedding_party/chris.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-12 article {
+    background-image: url("../images/wedding_party/tim.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-13 article {
+    background-image: url("../images/wedding_party/jeff.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-14 article {
+    background-image: url("../images/wedding_party/charlie.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-15 article {
+    background-image: url("../images/wedding_party/brendan.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-16 article {
+    background-image: url("../images/wedding_party/joe.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-17 article {
+    background-image: url("../images/wedding_party/scott.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-18 article {
+    background-image: url("../images/wedding_party/eric.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-19 article {
+    background-image: url("../images/wedding_party/ming.jpg");
+    background-position: top center; }
+  #wedding #wedding-party-20 article {
+    background-image: url("../images/wedding_party/steve.jpg");
+    background-position: top center; }
+
+#she-said-yes {
+  color: #f6f3ea;
+  font-family: "Dancing Script", cursive;
+  background: none;
+  font-size: 80px;
+  text-shadow: 1px 1px #333;
+  line-height: 1em;
+  margin-bottom: 600px; }
+
+.story-box {
+  margin-top: 60px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  border-radius: 15px;
+  padding: 20px;
+  background: rgba(26, 26, 26, 0.7);
+  color: white;
+  text-shadow: 1px 1px #333;
+  font-size: 20px;
+  line-height: 1.5em; }
+  .story-box:last-child {
     margin-right: 0; }
   @media screen and (max-width: 640px) {
-    #bottom-left {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 100%; }
-      #bottom-left:last-child {
-        margin-right: 0; } }
+    .story-box {
+      font-size: 14px; } }
+  .story-box h3 {
+    margin-bottom: 20px; }
+  .story-box .title {
+    display: inline-block;
+    width: 20%;
+    font-weight: 700;
+    vertical-align: top;
+    margin: 30px 0; }
+  .story-box .information {
+    display: inline-block;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+
+.story-box-spacer {
+  background: none;
+  height: 400px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .story-box-spacer:last-child {
+    margin-right: 0; }
 
 .headline, .subheadline, .details {
   color: white; }
@@ -644,3 +747,44 @@ body {
 
   .details {
     font-size: 14px; } }
+#footman {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  position: relative; }
+  #footman:last-child {
+    margin-right: 0; }
+  #footman p {
+    margin: 20px 0; }
+  #footman #jar {
+    margin-top: 250px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 17.05961%;
+    height: 200px;
+    background: url("../images/jar.svg") no-repeat top center;
+    background-size: contain;
+    color: white; }
+    #footman #jar:last-child {
+      margin-right: 0; }
+  #footman #details {
+    margin-top: 220px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 17.05961%;
+    color: #f6f3ea;
+    font-size: 20px;
+    line-height: 1.5em; }
+    #footman #details:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    #footman #jar {
+      margin-top: 100px; }
+    #footman #details {
+      margin-top: 100px;
+      font-size: 14px; } }
