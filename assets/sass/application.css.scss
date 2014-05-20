@@ -38,7 +38,7 @@ body {
 }
 
 #top {
-	background: $blue url("../images/sunset.png") no-repeat center center scroll;
+	background: $blue url("../images/sunset_newburyport.jpg") no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -93,7 +93,21 @@ body {
 	color: $off-white;
 	@include span-columns(12);
 	z-index: 100;
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 22px;
+
+  .selected {
+    color: $bright-yellow;
+    text-decoration: underline;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+    text-decoration: underline;
+  }
 
   ul {
     text-align: center;
@@ -123,13 +137,13 @@ body {
 	background-position: 115% 30%;
 	background-origin: content-box;
 	background-attachment: fixed;
-	background-size: 150%;
+	background-size: 100%;
   @include span-columns(12);
 
   .inter-caption {
     // background: $blue;
     color: $off-white;
-    margin-top: 600px;
+    margin-top: 300px;
     margin-bottom: 300px;
     border-radius: 10px;
     padding: 20px;
@@ -176,12 +190,13 @@ body {
     @include media($mobile) {
       height: 240px;
     }
+    border-radius: 15px 15px 0 0;
   }
 
   .caption {
     color: $off-white;
     text-align: center;
-    background: $dark-background;
+    background: HSLA(221, 39%, 10%, 1);
     padding: 10px;
     border-radius: 0 0 15px 15px;
   }
@@ -192,7 +207,7 @@ body {
     margin-top: 100px;
     background-image: url('../images/jess_baby.jpg');
   }
-  @include shift(8 of 12);
+  @include shift(2 of 12);
   @include media($mobile) {
     @include shift(3);
   }
@@ -203,8 +218,9 @@ body {
   article {
     // margin-top: 100px;
     background-image: url('../images/charles_baby.jpg');
+    background-position: 100% 20%;
   }
-  @include shift(2 of 12);
+  @include shift(7 of 12);
   @include media($mobile) {
     @include shift(3);
   }
@@ -213,9 +229,11 @@ body {
 
 #map-picture-3{
   article {
-    background-image: url('../images/jess_college.jpg');
+    background-image: url('../images/jess_college1.jpg');
+    background-position: 100% 50%;
+
   }
-  @include shift(7 of 12);
+  @include shift(2 of 12);
   @include media($mobile) {
     @include shift(3);
   }
@@ -227,7 +245,7 @@ body {
     // margin-top: 100px;
     background-image: url('../images/charles_graduation.jpg');
   }
-  @include shift(2 of 12);
+  @include shift(7 of 12);
   @include media($mobile) {
     @include shift(3);
   }
@@ -238,7 +256,7 @@ body {
     // margin-top: 100px;
     background-image: url('../images/jess_africa1.jpg');
   }
-  @include shift(7 of 12);
+  @include shift(2 of 12);
   @include media($mobile) {
     @include shift(3);
   }
@@ -246,10 +264,10 @@ body {
 
 #map-picture-6{
   article {
-    margin-top: 400px;
+    // margin-top: 400px;
     background-image: url('../images/charles_work.jpg');
   }
-  @include shift(4 of 12);
+  @include shift(7 of 12);
   @include media($mobile) {
     @include shift(3);
     article {
@@ -260,10 +278,10 @@ body {
 
 #map-picture-7{
   article {
-    margin-top: 400px;
+    // margin-top: 400px;
     background-image: url('../images/jess_law.jpg');
   }
-  @include shift(1 of 12);
+  @include shift(2 of 12);
   @include media($mobile) {
     @include shift(3);
     article {
@@ -278,64 +296,12 @@ body {
   padding-top: 100px;
 }
 
-// #boston {
-//   background-image: url("../images/sunset.jpg");
-//   background-position: bottom center;
-//   background-repeat: no-repeat;
-//   background-origin: content-box;
-//   background-attachment: fixed;
-//   background-size: cover;
-//   z-index: -9;
-
-//   @include span-columns(12);
-//   position: relative;
-
-//   .story-box {
-//     @include shift(2);
-//     border-radius: 12px;
-//     margin-top: 300px;
-//     background: none;
-//     p {
-//       margin: 30px 0;
-//     }
-//     .script {
-//       margin: 300px 0 300px 0;
-//     }
-//     @include media($mobile) {
-//       margin-top: 40px;
-//       .script {
-//         margin: 40px 0 40px 0;
-//       }
-//     }
-//   }
-// }
-
-// #heart {
-
-//   background-image: url('../images/Love_Heart_SVG.svg') ;
-//   background-repeat: no-repeat;
-//   background-position: top center;
-//   background-origin: content-box;
-//   background-size: cover;
-//   text-align: center;
-//   margin: 0 auto;
-// }
-
-// #heart-container {
-//   @include span-columns(12);
-//   text-align: center;
-//   font-family: $script_font;
-//   color: white;
-//   font-size: 60px;
-// }
-
-
 #engagement {
 	// background: url("../images/engagement.jpg");
   @include span-columns(12);
   position: relative;
 
-  #engagement-1, #engagement-2, #engagement-3, #boston {
+  #engagement-1, #engagement-2, #engagement-3, #boston, #scrim {
     position:absolute;
     top:0;
     bottom:0;
@@ -343,6 +309,12 @@ body {
     width:100%;
     // height:800px;
   }
+
+  #scrim {
+    background: rgba(0,0,0,0.8);
+    z-index: -2;
+  }
+
 
   #how-we-met {
     margin-top: 500px;
@@ -352,15 +324,8 @@ body {
       margin: 60px 0;
     }
     .script {
-      margin: 400px 0 500px 0;
+      margin: 200px 0 500px 0;
     }
-
-    // @include media($mobile) {
-    //   margin-top: 40px;
-    //   .script {
-    //     margin: 40px 0 40px 0;
-    //   }
-    // }
   }
 
   .headline {
@@ -374,7 +339,7 @@ body {
     background-origin: content-box;
     background-attachment: fixed;
     background-size: cover;
-    z-index: -9;
+    z-index: -7;
   } 
 
   #engagement-1 {
@@ -384,7 +349,7 @@ body {
     background-origin: content-box;
     background-attachment: fixed;
     background-size: cover;
-    z-index: -9;
+    z-index: -8;
   }
 
   #engagement-2 {
@@ -394,7 +359,7 @@ body {
     background-origin: content-box;
     background-attachment: fixed;
     background-size: cover;
-    z-index: -10;
+    z-index: -9;
   }
 
   #engagement-3 {
@@ -409,20 +374,27 @@ body {
 }
 
 #wedding {
-	background: url("../images/wedding.png");
+	background: url("../images/wedding.jpg");
 	@include span-columns(12);
 	background-position: 0% 70%;
 	background-repeat: no-repeat;
 	background-origin: content-box;
 	background-attachment: fixed;
 	background-size: cover;
-
+  
   // .headline {
   //   margin-top: 100px;
   // }
   .story-box {
     margin-bottom: 100px;
+    // @include shift(2);
+    // @include span-columns(8 of 12);
+
+    h3 {
+      text-align: center;
+    }
   }
+
 
   .headline {
     @include span-columns(12);
@@ -615,12 +587,11 @@ body {
 
 .story-box {
 	margin-top: 60px;
-	// border-radius: 12px;
-	@include span-columns(8 of 12);
-  @include shift(2);
+	@include span-columns(6 of 12);
+  @include shift(3);
   border-radius: 15px;
 	padding: 20px;
-	background: rgba(26, 26, 26, 0.7);
+	// background: rgba(26, 26, 26, 0.7);
 	color: white;
   text-shadow: 1px 1px #333;
   font-size: 20px;
@@ -628,6 +599,8 @@ body {
 
   @include media($mobile) {
     font-size: 14px;
+    @include shift(2);
+    @include span-columns(8 of 12);
   }
 
 	h3 {
