@@ -373,6 +373,7 @@ body {
   }
 }
 
+
 #wedding {
 	background: url("../images/wedding.jpg");
 	@include span-columns(12);
@@ -381,15 +382,62 @@ body {
 	background-origin: content-box;
 	background-attachment: fixed;
 	background-size: cover;
-  
-  // .headline {
-  //   margin-top: 100px;
-  // }
-  .story-box {
-    margin-bottom: 100px;
-    // @include shift(2);
-    // @include span-columns(8 of 12);
 
+
+  .info-box {
+    @include span-columns(6);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      padding: 10px;
+    }
+
+
+    color: $off-white;
+
+    h3 {
+      // color: #999;
+      // text-shadow: 1px 1px #333;
+      text-align: center;
+      // color: green;
+    }
+
+    .registry {
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+
+    .columns {
+      // border: 1px solid blue;
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+      padding: 0 20px;
+    }
+
+    .title {
+      font-size: 22px;
+      margin: 20px 0 0px 0;
+      color: #999;
+      text-shadow: 1px 1px #333;
+      vertical-align: top;
+
+    }
+
+    .information {
+      margin: 10px 0 0px 0px;
+    }
+  }
+
+
+  .wedding-information {
+    @include outer-container;
+    max-width: 1260px;
+  }
+
+
+
+  .story-box {
     h3 {
       text-align: center;
     }
@@ -398,6 +446,7 @@ body {
 
   .headline {
     @include span-columns(12);
+    margin: 40px 0;
   }
 
   .picture {
@@ -410,7 +459,7 @@ body {
       }
     }
     .caption {
-      height: 180px;
+      height: 160px;
     }
     margin-bottom: 40px;
 
@@ -606,23 +655,6 @@ body {
 	h3 {
 		margin-bottom: 20px;
 	}
-
-	.title {
-		display: inline-block;
-		width: 20%;
-		font-weight: 700;
-		vertical-align: top;
-    margin: 30px 0;
-	}
-
-	.information {
-		display: inline-block;
-		width: 70%;
-    margin-top: 30px;
-		margin-bottom: 30px;
-    // margin-left: 5%;
-    // margin-bottom: 40px;
-	}
 }
 
 .story-box-spacer {
@@ -685,7 +717,7 @@ body {
   }
 
   #jar {
-    margin-top: 250px;
+    margin-top: 25%;
     @include span-columns(2);
     @include shift(2);
     height: 200px;
@@ -695,7 +727,7 @@ body {
   }
   
   #details {
-    margin-top: 220px;
+    margin-top: 25%;
     @include span-columns(5 of 12);
     @include shift(2);
     color: $off-white;
@@ -713,4 +745,14 @@ body {
       font-size: 14px;
     }
   }
+}
+
+#wedding {
+  .headline {
+    padding-top: 40px;
+  }
+}
+
+#wedding-party {
+  padding-top: 80px;
 }
